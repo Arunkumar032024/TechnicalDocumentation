@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background-color: #ffdd95;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff9834;
+}
+/* header section design */
+nav{
+    width: 5%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    border-right: 1px solid #3468c0;
+    background-color: #ff9843;
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;    
+    padding: 5px;
+    transition: 0.3s;
+}
+nav ul li a:hover img{
+    background-color: #ffdd95;
+}
+
+/* main section design */
+div,
+section{
+    width: 95%;
+    margin-left: 5%;
+    padding: 25px;
+    background-color: #ff9843;
+    margin-bottom: 1rem;
+    
+}
+div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div p{
+    font-size: 5rem;
+    color: #3468c0;
+}
+section h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+section ol li,
+section p{
+    font-size: 1.125rem;
+    line-height: 1.413rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.413rem;
+    text-align: justify;
+    list-style: inside;
+}
+@media (max-width:768px){
+    div,
+    section{
+        padding: 20px;
+    }
+}
+@media (max-width:592px){
+    nav{
+        width: 10%;
+    }
+    div,
+    section{
+        width: 90%;
+        margin-left: 10%;
+        padding: 15px;
+    }
+    div p{
+        transform: rotate(90deg);
+
+    }
+}
+@media (max-width:480px){
+    nav{
+        width: 15%;
+    }
+    div,
+    section{
+        width: 85%;
+        margin-left: 15%;
+        padding: 10px;
+    }
+}
